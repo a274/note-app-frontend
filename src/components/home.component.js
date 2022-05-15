@@ -11,7 +11,7 @@ export default class Home extends Component {
 
     this.state = {
       content: "",
-      redirect: null,
+      redirect: "/login",
       currentUser: {
         id: 0,
         login: "",
@@ -26,13 +26,14 @@ export default class Home extends Component {
     };
   }
 
+  /*
   componentDidMount() {
     const currentUser1 = AuthService.getCurrentUser();
 
     const currentUser = NoteService.getUser(currentUser1);
     if (currentUser) this.setState({ redirect: "/profile" });
     this.setState({ currentUser: currentUser })
-  }
+  }*/
 
   render() {
     if (this.state.redirect) {
