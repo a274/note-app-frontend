@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={"/profile"} className="navbar-brand">
             NoteApp
           </Link>
 
